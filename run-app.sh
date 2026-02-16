@@ -1,9 +1,8 @@
 #!/usr/bin/bash
 
-apt install python3-venv python3-pip
+apt install python3-venv python3-pip -y
 python3 -m venv .venv
 source .venv/bin/activate
-pip install streamlit -y
-git clone https://github.com/ayobamiblackforce-100/project-2.git
+pip install streamlit
 cd project-2
 streamlit run app.py
